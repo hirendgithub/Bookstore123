@@ -10,12 +10,14 @@ on:
 
     branches:
       - master
+      - main
       # You can also include other branches if needed, e.g., 'develop'
       # - develop
     # Optionally, you can specify paths to trigger the workflow only when certain files change
     # paths:
     #   - 'src/**' # Only trigger if files in 'src' directory change
     #   - '!.github/**' # Exclude changes in .github directory
+  workflow_dispatch:
 
 jobs:
   scan_pr_code:
